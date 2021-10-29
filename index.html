@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+
+
+
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <title>My video games consoles</title>
+</head>
+<body class="vh-100 bg-dark text-light">
+
+
+
+    <!--NAVIGATION-->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <span class="badge bg-danger shadow">Vlado</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" stlye="z-index: 10">
+                    <li class="nav-item">
+                        <a href="" class="nav-link active" data-bs-toggle="collapse" data-bs-target=".multi-collapse"
+                            aria-expanded="false" aria-controls="about contact">Info</a>
+                    </li>
+
+
+
+                    <li class="nav-item">
+                        <a href="#about" role="button" class="nav-link" data-bs-toggle="collapse" aria-expanded="false"
+                            aria-controls="about">About</a>
+
+
+
+
+                    <li class="nav-item">
+                        <a href="#contact" role="button" class="nav-link" data-bs-toggle="collapse"
+                            aria-expanded="false" aria-controls="contact">Contact</a>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <!-- HEADER-->
+
+    <header class="conteiner fixed-top text-end mt-5">
+        <h1 class="display-1">
+            Hi. I am <span class="badge bg-secondary">Vlado</span>
+        </h1>
+
+        <h2 class="display-3">video games collector</h2>
+
+
+
+        <!--  HEADER > Portfolio & Email Btn Group-->
+        <div class="btn-group">
+            <!-- Profile BTN -->
+            <button class="btn btn-outline-danger text-uppercase" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#collection" aria-controls="collection">My collection</button>
+
+
+            <!-- Email BTN -->
+            <button class="btn btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#email"
+                aria-controls="email">
+                <i class="bi bi-envelope-open"></i>
+            </button>
+        </div>
+
+
+
+        <!-- HEADER > About & Contact dropdown content -->
+        <div class="row mt-3">
+
+            <!-- ABOUT -->
+            <div class="col-md-6 mt-3">
+                <div class="collapse multi-collapse" id="about">
+                    <div class="card card-body text-start shadow bg-dark-transparent">
+
+                        <h5 class="card-title text-danger">About</h5>
+                        <div class="card-text">
+                            <h3 class="text-white-50 ms-3">Collector</h3>
+                            <ul class="list-unsyled ms-5">
+                                <li>Games console</li>
+                                <li>Playstation</li>
+                                <li>Nintendo</li>
+                                <li>Xbox</li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- CONTACT -->
+
+            <div class="col-md-6 mt-3">
+                <div class="collapse multi-collapse" id="contact">
+                    <div class="card card-body text-start shadow bg-dark-transparent">
+
+                        <h5 class="card-title text-danger">Contact</h5>
+                        <div class="card-text">
+                            <h3 class="text-white-50 ms-3">Get in touch:</h3>
+                            <ul class="list-unsyled ms-5">
+                                <li><i class="bi bi-house me-2 text-danger"></i>City: Split </li>
+                                <li><i class="bi bi-signpost me-2 text-danger"></i>Street: Svetog Spasa 5b</li>
+                                <li><i class="bi bi-telephone me-2 text-danger"></i>Phone: +0385 989487980</li>
+                                <li><i class="bi bi-envelope me-2 text-danger"></i>Email: vdzalto85@gmail.com</li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <!-- PROFILE IMG -->
+
+    <img src="./img/background.jpg" alt="" class="position-relative top-0 img-fluid profile-pic" style="z-index: -1;">
+
+
+
+    <!-- PORTFOLIO OFFCANVES CONTENT-->
+
+    <div class="offcanvas offcanvas-start bg-dark" id="collection" tabindex="-1"
+        aria-labelledby="offcanvasPortfolioLabel">
+
+        <div class="offcanvas-header">
+            <h1 class="offcanvas-title text-danger">Home collection</h1>
+            <button class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body">
+            <p>I am Vlado, a big fan of video games consoles. My consoles are: </p>
+
+            <ul class="list-group"><a href="https://playstation.fandom.com/wiki/PlayStation_(console)"
+                    class="list-group-item list-group-item-danger list-group-item-a mb-2" mb-2><i
+                        class="bi bi-globe2"></i>Playstation 1</a><a
+                    href="https://playstation.fandom.com/wiki/PlayStation_2"
+                    class="list-group-item list-group-item-danger list-group-item-action mb-2"><i
+                        class="bi bi-globe2"></i>Playstation 2</a><a
+                    href="https://playstation.fandom.com/wiki/PlayStation_3"
+                    class="list-group-item list-group-item-danger list-group-item-action mb-2"><i
+                        class="bi bi-globe2"></i>Playstation 3</a><a
+                    href="https://playstation.fandom.com/wiki/PlayStation_4"
+                    class="list-group-item list-group-item-danger list-group-item-action mb-2"><i
+                        class="bi bi-globe2"></i>Playstation 4</a><a
+                    href="https://nintendo.fandom.com/wiki/Super_Nintendo_Entertainment_System"
+                    class="list-group-item list-group-item-danger list-group-item-action mb-2"><i
+                        class="bi bi-globe2"></i>Nintendo SNES</a><a href="https://nintendo.fandom.com/wiki/Nintendo_64"
+                    class="list-group-item list-group-item-danger list-group-item-action mb-2"><i
+                        class="bi bi-globe2"></i>Nintendo 64</a><a
+                    href="https://nintendo.fandom.com/wiki/New_Nintendo_2DS_XL"
+                    class="list-group-item list-group-item-danger list-group-item-action mb-2"><i
+                        class="bi bi-globe2"></i>New Ninitendo 2DS XL </a></ul>
+
+
+        </div>
+
+    </div>
+
+
+
+
+    <!-- EMAIL OFFCANVES CONTENT -->
+
+    <div class="offcanvas offcanvas-bottom bg-dark" tabindex="-1" id="email" aria-labelledby="offcanvesEmaillabel"
+        style="height: 50vh">
+
+        <div class="offcanvas-header">
+            <h1 class="offcanvas-title text-danger" id="offcanvasEmaillabel">Email
+            </h1>
+            <button class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body d-flex w-75 flex-column m-auto">
+            <form class="w-100">
+                <div class="row">
+                    <div class="col"><input type="text" class="form-control" placeholder="First name"
+                            aria-label="First name"></div>
+                    <div class=" col"><input type="text" class="form-control" placeholder="Last Name"
+                            aria-label="Last-name"></div>
+                    <div class=" col-12 mt-3">
+                        <textarea type="submit" class="w-100" rows="10" placeholder="Write a message"></textarea>
+                    </div>
+
+
+                </div>
+                <button class="btn btn-outline-danger mt-3 w-100">Send</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <!-- FOOTER -->
+
+    <footer class="w-100 fixed-bottom bg-dark-transparent text-lg-start text md-center">
+        <div class="row align-items-center p-3">
+            <h2 class="col">Fall in love with games</h2>
+            <i class="bi bi-bootstrap-fill w-100 btn-danger rounded-3 col-md text-center py-2 mx-2 fs-4"></i>
+
+
+            <!-- SOCIAL ICONS -->
+            <div class="col ms-2 text-muted mt-sm-4 fs-2">
+                <ul class="list-unstlyed d-flex flex-row justify-content-around">
+                    <li><a href="https://www.facebook.com/login/"><i class="bi bi-facebook text-white-50"></i></a></li>
+                    <li><a
+                            href="https://www.linkedin.com/login?fromSignIn=true&trk=guest_homepage-basic_nav-header-signin"><i
+                                class="bi bi-linkedin text-white-50"></i></a></li>
+                    <li><a href="https://www.youtube.com/"><i class="bi bi-youtube
+                    text-white-50"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS CDN -->
+
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+
+        </script>
+
+</body>
+</html>
